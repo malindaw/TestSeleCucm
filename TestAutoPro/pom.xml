@@ -16,6 +16,36 @@
 	    <version>7.16.1</version>
 	    <scope>test</scope>
 	</dependency>
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>4.19.1</version>
+	</dependency>
  </dependencies>
+ <build>
+  <plugins>
+   <plugin>
+    <artifactId>maven-compiler-plugin</artifactId>
+	    <configuration>
+	      <source>1.8</source>
+	      <target>1.8</target>
+	      <showDeprecation>true</showDeprecation>
+	      <showWarnings>true</showWarnings>
+	      <fork>true</fork>
+	    </configuration>
+	</plugin>
+	<plugin>
+		<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-surefire-plugin</artifactId>
+    	<version>2.18.1</version>
+	    <configuration>
+			<testFailureIgnore>true</testFailureIgnore>
+			<includes>
+				<exclude>**/*TestRunner.java</exclude>
+			</includes>
+	    </configuration>
+	</plugin>
+ </plugins>
+</build>
    
 </project>
