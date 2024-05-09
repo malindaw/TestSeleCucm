@@ -21,7 +21,12 @@
 	    <artifactId>selenium-java</artifactId>
 	    <version>4.19.1</version>
 	</dependency>
- </dependencies>
+	<dependency>
+		<groupId>TestServicesAutoPro</groupId>
+  		<artifactId>TestServicesPro</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+  </dependencies>
  <build>
   <plugins>
    <plugin>

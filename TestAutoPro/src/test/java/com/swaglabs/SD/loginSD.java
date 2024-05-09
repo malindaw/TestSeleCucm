@@ -8,8 +8,7 @@ public class loginSD {
 	
 	@Given("I will navigate to Swaglabs login page")
 	public void i_will_navigate_to_swaglabs_login_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    //WebBrowser nn = new WebBrowser();
 	}
 	@When("I enter username")
 	public void i_enter_username() {
