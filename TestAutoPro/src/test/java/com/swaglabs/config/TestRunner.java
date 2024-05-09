@@ -1,4 +1,4 @@
-package com.swaglabs.SD;
+package com.swaglabs.config;
 
 import org.junit.runner.RunWith;
 
