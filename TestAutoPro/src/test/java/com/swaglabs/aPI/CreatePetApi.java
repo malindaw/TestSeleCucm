@@ -34,8 +34,8 @@ public class CreatePetApi {
 				"  \"status\": \"available\"\r\n" + 
 				"}");
 		response = request.post(BaseUrl+"/v2/pet");
-		
 	}
+	
 	public void verifyResposeCode() {
 		System.out.println("response code : "+response.getStatusCode());
 	}
